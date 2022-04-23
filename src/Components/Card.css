@@ -1,0 +1,235 @@
+.card{
+    position: absolute;
+    width: 1250px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: var(--cardbc); */
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(145, 145, 145, 0.407);
+    /* box-shadow: 0px 0px 30px #ffc107; */
+    ;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.closebtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.closebtn:hover{
+    transform: scale(1.2);
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atagincard{
+    text-decoration: none;
+    padding: 0.5rem 1.8rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--headerbc);
+    color: var(--atag);
+    transition: all 0.5s;
+}
+
+.atagincard:hover{
+    background-color: var(--red);
+    box-shadow: 0 0 10px var(--red);
+}
+
+/* ___________________________________ left block _______________________________________ */
+
+.photo{
+    border-radius: 10px;
+    width: 35%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo img{
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 30px #ffc107; */
+}
+
+.photoinfo{
+    border-left: 1px solid rgba(137, 137, 137, 0.225);
+    border-bottom: 1px solid rgba(137, 137, 137, 0.225);
+    padding: 1rem;
+    width: 320px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photoinfo div{
+    width: 60%;
+    text-align: left;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.photoinfo .headname{
+    font-weight: 700;
+    width: 40%;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ____________________________________ right block ______________________________________ */
+
+.info{
+    border-radius: 10px;
+    width: 62%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoboxes{
+    width: 100%;
+}
+
+/* --------------first---------------- */
+
+.first{
+    border-left: 1px solid rgba(137, 137, 137, 0.225);
+    border-bottom: 1px solid rgba(137, 137, 137, 0.225);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.first h2{
+    color: #444;
+    text-align: left;
+    letter-spacing: 0.07rem;
+}
+
+.first p{
+    margin-top: 1rem;
+    color: #555;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* --------------second---------------- */
+
+.secondinfo{
+    border-bottom: 1px solid rgba(137, 137, 137, 0.225);
+    border-left: 1px solid rgba(137, 137, 137, 0.225);
+    /* box-shadow: -3px 3px 5px #ffc10736; */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.second{
+    border-radius: 10px;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .secondparent{
+    width: 30%;
+}
+
+.second .mb{
+    margin-bottom: 2rem;
+}
+
+.second .secondparent .big{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #444;
+}
+
+.second .secondparent .small{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #555;
+    padding-top: 0.4rem;
+}
+
+.secondinfo .thirdheading{
+    /* border: 2px solid red; */
+    padding-left: 1rem;
+    text-align: left;
+    color: #444;
+    letter-spacing: 0.07rem;
+}
+
+/* --------------third---------------- */
+
+.third{
+    border-left: 1px solid rgba(137, 137, 137, 0.225);
+    border-bottom: 1px solid rgba(137, 137, 137, 0.225);
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    height: 40%;
+}
+
+.third .thirdheading{
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #444;
+    letter-spacing: 0.07rem;
+}
+
+.thirdrepos{
+    padding-left: 1.5rem;
+    overflow: auto;
+    height: 80%;
+}
+
+.singlerepo{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.singlerepo h4 a{
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.singlerepo h4 a:hover{
+    color: #000;
+}
+
+.singlerepo p{
+    color: #666;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}

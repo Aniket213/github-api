@@ -1,0 +1,119 @@
+.searchbar{
+    background-color: var(--yellow);
+    color: #fff;
+    position: relative;
+    padding: 2rem;
+}
+
+.heading{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+ #content {
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    margin-left: 170px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+    
+  .input {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+    transition-delay: 0.4s;
+    transform: translate(-100%, -50%);
+  }
+  
+  .search {
+    background: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 100%;
+    outline: 0;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: translate(-100%, -50%);
+  }
+  
+  .search:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    margin-top: 26px;
+    margin-left: 17px;
+    transition: 0.2s ease-in-out;
+  }
+  
+/* __________________________________________________________________________ */
+
+  .close {
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.4s;
+  }
+  
+  .close:before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    margin-top: -1px;
+    margin-left: -13px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: 0.2s ease-in-out;
+  }
+  
+  .close:after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: -1px;
+    margin-left: -13px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+  }
+  
+  .square {
+    box-sizing: border-box;
+    padding: 0 40px 0 10px;
+    width: 300px;
+    height: 50px;
+    border: 4px solid #ffffff;
+    border-radius: 0;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    outline: 0;
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+      padding 0.2s;
+    transition-delay: 0.4s, 0s, 0.4s;
+    transform: translate(-100%, -50%);
+  }
+  

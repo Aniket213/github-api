@@ -1,38 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.light{
+  --bc : #f1f1f1;
+  --c : #555;
+  --headerbc : #ff9800;
+  --red : #eb4747;
+  --yellow : #ffc107;
+  --atag : #f1f1f1;
+  --cardbc : #f1f1f1;
+}
+
+.dark{
+  --bc : #f1f1f1;
+  --c : #555;
+  --headerbc : #ff9800;
+  --red : #eb4747;
+  --yellow : #866400;
+  --atag : #f1f1f1;
+  --cardbc : #f1f1f1;
+}
+
 .App {
   text-align: center;
+  background-color: var(--bc);
+  color: var(--c);
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fa-mode{
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #f1f1f1;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-sun{
+  display: none;
 }

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
+import Container from './Components/Container';
+import Random from './Components/Random';
+import Searchbar from './Components/Searchbar';
 
 function App() {
+  const [query, setquery] = useState('');
+  const [popup, setpopup] = useState(false);
+
+  const childtoparent = (a)=>{
+    setquery(a);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App light" >
+      <Searchbar fun={childtoparent} setpopup={setpopup} />
+      <Container query={query} setpopup={setpopup} popup={popup}/>
+      <Random/>
     </div>
   );
 }
 
 export default App;
+
